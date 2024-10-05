@@ -121,4 +121,4 @@ Structural analyses and visualization were performed using PyMOL Molecular Graph
    - The G/S linker peptide in Ov-FUS-1 contributed to a flexible conformational structure, potentially enhancing receptor recognition.
 
 ### In conclusion, Ov-FUS-1 demonstrated higher binding affinity and more favorable interactions with the TLR4 receptor compared to the Ov-103 + Ov-RAL-2 complex. 
-This suggests that Ov-FUS-1 may be a more effective vaccine candidate in terms of innate immune system activation via TLR4 signaling.
+## This suggests that Ov-FUS-1 may be a more effective vaccine candidate in terms of innate immune system activation via TLR4 signaling.
