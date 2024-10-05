@@ -85,3 +85,40 @@ Energies were computed using electrostatic and van der Waals terms with OPLS non
 ### Analysis and Visualization:
 Top-ranked low energy docked vaccine-TLR4 complexes were grouped based on fraction of common contacts and pairwise backbone RMSD.
 Structural analyses and visualization were performed using PyMOL Molecular Graphics System.
+
+## Results Summary
+
+ Key findings include:
+
+1. Structural Modeling:
+   - AlphaFold2 successfully predicted 3D structures for both vaccine candidates.
+   - Ov-FUS-1 achieved a high confidence score (pLDDT = 86.5%).
+   - Ov-103 + Ov-RAL-2 complex scored moderate confidence (pLDDT = 63.3%, ipTM = 0.23).
+   - Both models showed low predicted aligned error (PAE < 5Å) and good sequence depth.
+
+2. Molecular Docking:
+   - HADDOCK platform effectively produced docked complexes for both candidates with TLR4.
+   - OvFUS1-TLR4 complexes were categorized into 19 clusters.
+   - Ov103OvRAL2-TLR4 complexes were categorized into 5 clusters.
+
+3. Binding Affinity:
+   - Ov-FUS-1 showed stronger binding affinity to TLR4 compared to Ov-103 + Ov-RAL-2 complex.
+   - OvFUS1-TLR4 top cluster:
+     * Binding affinity: -316.28 Kcal/mol
+     * HADDOCK score: -93.7 +/- 11.2 Kcal/mol
+     * Cluster size: 10 complexes
+     * Z-score: -1.2
+   - Ov103OvRAL2-TLR4 top cluster:
+     * Binding affinity: -234.96 Kcal/mol
+     * HADDOCK score: -42.5 +/- 0.4 Kcal/mol
+     * Cluster size: 2 complexes
+     * Z-score: -1.5
+
+4. Structural Examination:
+   - OvFUS1-TLR4 complex exhibited more hydrogen bonds at the interaction interface.
+   - Ov-FUS-1 established conserved interactions with TLR4 receptor key active residue K388 and passive residues G363, K388, E439, and R460.
+   - K388 formed a significant interface hotspot with Q149 and E152 of Ov-FUS-1.
+   - The G/S linker peptide in Ov-FUS-1 contributed to a flexible conformational structure, potentially enhancing receptor recognition.
+
+### In conclusion, Ov-FUS-1 demonstrated higher binding affinity and more favorable interactions with the TLR4 receptor compared to the Ov-103 + Ov-RAL-2 complex. 
+This suggests that Ov-FUS-1 may be a more effective vaccine candidate in terms of innate immune system activation via TLR4 signaling.
