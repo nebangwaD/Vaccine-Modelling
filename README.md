@@ -59,3 +59,28 @@ IGDLISQVNSFRETMSNPKMDFTNKENKWEELLKKIFVTEGLNKVIPLLQKLKNSAPTTFATYLFTCIVPVLINTLRE
 MKFVILLTIGLLVVAAIPQRRQQQQQQQQQQQRDEREIPPFLEGAPPSVIDEFYNLLKTDENKTDQQTEADVEAFINRLG
 GSYKVRFTQFMEEVKKARADYERIHQQAVARFSPAAKDADARMSAIADSPHLTTRQKSQQIQAIMDSLSESVRREIINAL
 SPQE
+
+
+## Our Approach
+The study focused on predicting and analyzing the 3D structures of Ov-FUS-1 and Ov-103 + Ov-RAL-2 vaccine candidates, as well as their interaction with the human TLR4 receptor. The process involved several key steps:
+
+###Structure Prediction:
+AlphaFold2 via ColabFold v.1.5.5 was used to predict high-resolution 3D structures.
+Ov-FUS-1 was modelled as a single unit, while Ov-103 and Ov-RAL-2 were modelled as a complex.
+Five models were generated for each protein, with the best model selected based on pLDDT and pTM scores.
+###TLR4 Structure Preparation:
+A 2.40 Å resolution structure of human TLR4 (PDB ID 3FXI) was obtained from the Protein Data Bank.
+The structure was cleaned and prepared using Molecular Operating Environment (MOE) software.
+###Structure Optimization:
+All models underwent protonation and energy minimization to optimize atomic positions, bond geometries, and torsion angles.
+###Molecular Docking:
+The HADDOCK server was used to characterize binding affinity between vaccine candidates and TLR4.
+Previously identified critical residues of TLR4 (R264, K341, K362, K388, F440, L444, F463, Q436) were used to specify the binding region.
+The HADDOCK algorithm docked each vaccine antigen to these binding site residues.
+###Molecular Dynamics Simulation:
+Resulting structures underwent MD simulation with a gentle refinement in TIP3P water molecules.
+Simulation parameters included 5000 steps at 300 K with position restraints, followed by cooling stages.
+Energies were computed using electrostatic and van der Waals terms with OPLS nonbonded parameters.
+###Analysis and Visualization:
+Top-ranked low energy docked vaccine-TLR4 complexes were grouped based on fraction of common contacts and pairwise backbone RMSD.
+Structural analyses and visualization were performed using PyMOL Molecular Graphics System.
